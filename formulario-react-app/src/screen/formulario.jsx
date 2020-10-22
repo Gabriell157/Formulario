@@ -47,14 +47,14 @@ function Formulario() {
         })
     }
 
-    function onChangeOito(evento) {
+    function onChangeSete(evento) {
         alteraPessoa({
             ...pessoa,
             endereco: evento.target.value
         })
     }
 
-    function onChangeNove(evento) {
+    function onChangeOito(evento) {
         alteraPessoa({
             ...pessoa,
             estado: evento.target.value
@@ -71,8 +71,8 @@ function Formulario() {
         <input onChange={onChangeQuatro} type="text" name="cidade" id="4" />
         <input onChange={onChangeCinco} type="email" name="email" id="5" />
         <input onChange={onChangeSeis} type="date" name="dataNascimento" id="7" />
-        <input onChange={onChangeOito} type="text" name="endereco" id="8" />
-        <input onChange={onChangeNove} type="text" name="estado" id="9" />
+        <input onChange={onChangeSete} type="text" name="endereco" id="8" />
+        <input onChange={onChangeOito} type="text" name="estado" id="9" />
 
         <p>Seu Nome : {pessoa.nome}</p>
         <p>Sua Idade : {pessoa.idade}</p>
