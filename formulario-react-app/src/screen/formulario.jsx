@@ -61,6 +61,15 @@ function Formulario() {
         })
     }
 
+    function onChangeEmpregado(evento) {
+        alteraPessoa({
+            ...pessoa,
+            empregado: evento.target.checked
+        })
+    }
+
+
+
     return <form>
 
         <h1>S2 Meu Curriculo S2</h1>
@@ -73,6 +82,12 @@ function Formulario() {
         <input onChange={onChangeSeis} type="date" name="dataNascimento" id="nascimento" />
         <input onChange={onChangeSete} type="text" name="endereco" id="endereco" />
         <input onChange={onChangeOito} type="text" name="estado" id="estado" />
+        <input onChange={onChangeEmpregado} type="checkbox" />
+
+
+
+
+
 
         <p>Seu Nome : {pessoa.nome}</p>
         <p>Sua Idade : {pessoa.idade}</p>
@@ -82,6 +97,8 @@ function Formulario() {
         <p>Sua Data de Nascimento : {pessoa.dataNascimento}</p>
         <p>Seu Endereço : {pessoa.endereco}</p>
         <p>Seu Estado : {pessoa.estado}</p>
+        <p>{pessoa.nome} esta atualmente {pessoa.empregado ? 'trabalhando' : 'procurando trampo'}</p>
+
 
     </form>
 }
