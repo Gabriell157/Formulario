@@ -65,14 +65,14 @@ function Formulario() {
 
         <h1>S2 Meu Curriculo S2</h1>
 
-        <input onChange={onChangeUm} type="text" name="nome" id="1" />
-        <input onChange={onChangeDois} type="number" name="idade" id="2" />
-        <input onChange={onChangeTres} type="number" name="telefone" id="3" />
-        <input onChange={onChangeQuatro} type="text" name="cidade" id="4" />
-        <input onChange={onChangeCinco} type="email" name="email" id="5" />
-        <input onChange={onChangeSeis} type="date" name="dataNascimento" id="7" />
-        <input onChange={onChangeSete} type="text" name="endereco" id="8" />
-        <input onChange={onChangeOito} type="text" name="estado" id="9" />
+        <input onChange={onChangeUm} type="text" name="nome" id="nome" />
+        <input onChange={onChangeDois} type="number" name="idade" id="idade" />
+        <input onChange={onChangeTres} type="number" name="telefone" id="telefone" />
+        <input onChange={onChangeQuatro} type="text" name="cidade" id="cidade" />
+        <input onChange={onChangeCinco} type="email" name="email" id="email" />
+        <input onChange={onChangeSeis} type="date" name="dataNascimento" id="nascimento" />
+        <input onChange={onChangeSete} type="text" name="endereco" id="endereco" />
+        <input onChange={onChangeOito} type="text" name="estado" id="estado" />
 
         <p>Seu Nome : {pessoa.nome}</p>
         <p>Sua Idade : {pessoa.idade}</p>
