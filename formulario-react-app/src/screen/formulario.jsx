@@ -78,9 +78,6 @@ function Formulario() {
 
 
 
-
-
-
         <p>Seu Nome : {pessoa.nome}</p>
         <p>Seu Telefone : {pessoa.telefone}</p>
         <p>Sua Cidade : {pessoa.cidade}</p>
@@ -88,8 +85,7 @@ function Formulario() {
         <p>Sua Data de Nascimento : {pessoa.dataNascimento}</p>
         <p>Seu Endereço : {pessoa.endereco}</p>
         <p>Seu Estado : {pessoa.estado}</p>
-        <p>{pessoa.nome} esta atualmente {pessoa.empregado ? 'trabalhando' : 'procurando trampo'}</p>
-
+        <p>{pessoa.nome} Esta atualmente {pessoa.empregado ? 'trabalhando' : 'procurando trampo'}</p>
 
     </form>
 }
