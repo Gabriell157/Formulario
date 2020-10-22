@@ -12,13 +12,6 @@ function Formulario() {
         })
     }
 
-    function onChangeDois(evento) {
-        alteraPessoa({
-            ...pessoa,
-            idade: evento.target.value
-        })
-    }
-
     function onChangeTres(evento) {
         alteraPessoa({
             ...pessoa,
@@ -75,8 +68,7 @@ function Formulario() {
         <h1>S2 Meu Curriculo S2</h1>
 
         <input onChange={onChangeUm} type="text" name="nome" id="nome" />
-        <input onChange={onChangeDois} type="number" name="idade" id="idade" />
-        <input onChange={onChangeTres} type="number" name="telefone" id="telefone" />
+        <input onChange={onChangeTres} type="tel" name="telefone" id="telefone" />
         <input onChange={onChangeQuatro} type="text" name="cidade" id="cidade" />
         <input onChange={onChangeCinco} type="email" name="email" id="email" />
         <input onChange={onChangeSeis} type="date" name="dataNascimento" id="nascimento" />
@@ -90,7 +82,6 @@ function Formulario() {
 
 
         <p>Seu Nome : {pessoa.nome}</p>
-        <p>Sua Idade : {pessoa.idade}</p>
         <p>Seu Telefone : {pessoa.telefone}</p>
         <p>Sua Cidade : {pessoa.cidade}</p>
         <p>Seu Email : {pessoa.email}</p>
