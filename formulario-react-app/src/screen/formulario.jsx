@@ -63,7 +63,7 @@ function Formulario() {
 
     return <form>
 
-        <h1>S2 Meu Curriculo S2</h1>
+        <h1> S2 Meu Formulario S2 </h1>
 
         <input onChange={onChangeUm} type="text" name="nome" id="1" />
         <input onChange={onChangeDois} type="number" name="idade" id="2" />
@@ -73,6 +73,7 @@ function Formulario() {
         <input onChange={onChangeSeis} type="date" name="dataNascimento" id="7" />
         <input onChange={onChangeSete} type="text" name="endereco" id="8" />
         <input onChange={onChangeOito} type="text" name="estado" id="9" />
+        
 
         <p>Seu Nome : {pessoa.nome}</p>
         <p>Sua Idade : {pessoa.idade}</p>

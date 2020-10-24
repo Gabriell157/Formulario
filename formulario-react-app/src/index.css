@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.lista-projetos {
+  width: 350px;
+  margin: 20px;
+  background-color: #852080;
+  border: 15px;
+  box-shadow: -5px -10px 3px rgb(0, 0, 0), 6px 9px 5px rgb(0, 0, 0);
+  -webkit-box-shadow: -5px -10px 3px rgb(0, 0, 0), 6px 9px 5px rgb(0, 0, 0);
+  -moz-box-shadow: -5px -10px 3px rgb(0, 0, 0), 6px 9px 5px rgb(0, 0, 0);
+  margin: 10;
+  padding: 10;
+  list-style: none;
+}
