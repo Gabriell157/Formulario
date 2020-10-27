@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Formulario from './formulario'
 import Curriculo from './curriculo'
-import Projeto from './projeto'
+import Projetos from './formularioprojetos'
+import Tabela from './tabela'
 
 export default Apps
 function Apps() {
@@ -17,9 +18,12 @@ function Apps() {
             <Route path="/curriculo">
                 <Curriculo />
             </Route>
-            <Route path="/projeto">
-                <Projeto />
+            <Route path="/projetos">
+                <Projetos />
             </Route>
+            <Route path="/tabela">
+                <Tabela />
+            </Route>               
         </Switch>
     </Router>
 

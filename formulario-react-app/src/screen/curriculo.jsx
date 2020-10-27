@@ -3,31 +3,8 @@ import React, { useState } from 'react'
 
 export default Curriculo
 
-function getFromLocalStorage(chave) {
-    const valorDoLocalStorage = localStorage.getItem(chave)
-    return JSON.parse(valorDoLocalStorage)
-  }
-  
-  function putOnLocalStorage(chave, valor) {
-    const valorComoString = JSON.stringify(valor)
-    localStorage.setItem(chave, valorComoString)
-  }
-
-  function salvarPessoa() {
-    putOnLocalStorage('usuario')
-  }
-
-  function Pessoa() {
-    
-    alteraPessoa(novoEstado)
-
-  }
-
 function Curriculo () {
 
-    const usuario = getFromLocalStorage('usuario')
-    const [usuario, alteraPessoa] = useState(usuario || {})
-    
     return <div>
         
         <img src="https://scontent.fpoa28-1.fna.fbcdn.net/v/t1.0-9/70635447_2483214508393291_5947822276601708544_n.jpg?_nc_cat=104&_nc_sid=174925&_nc_ohc=umBy0oHTfxwAX_eIrAy&_nc_ht=scontent.fpoa28-1.fna&oh=01175f0bd4ce578b971c4ff11f73e817&oe=5F9B0119" alt="Foto Curriculo" width="200" height="200"/>
@@ -75,9 +52,7 @@ function Curriculo () {
         <p>Empresa: Scheffer Soluções em Marketing</p>
         <p>Cargo: Vendedor</p>
         <p>Período: 05/05/2019 - 26/05/2020</p>
-
-        <button type="button" onClick={salvarPessoa} >Salvar</button>
-        
+      
     </div>
 
     
